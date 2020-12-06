@@ -1,0 +1,7 @@
+/* Code tidied up by ScrapBook */
+.bv-form .help-block { margin-bottom: 0px; }
+.bv-form .tooltip-inner { text-align: left; }
+.nav-tabs li.bv-tab-success > a { color: rgb(60, 118, 61); }
+.nav-tabs li.bv-tab-error > a { color: rgb(169, 68, 66); }
+.bv-form .bv-icon-no-label { top: 0px; }
+.bv-form .bv-icon-input-group { top: 0px; z-index: 100; }

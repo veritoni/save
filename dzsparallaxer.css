@@ -1,0 +1,111 @@
+/* Code tidied up by ScrapBook */
+@keyframes keyframes-rotate {
+0% { transform: rotate(0deg); }
+50% { transform: rotate(180deg); }
+100% { transform: rotate(360deg); }
+}
+@keyframes keyframes-rotate {
+0% { transform: rotate(0deg); }
+50% { transform: rotate(180deg); }
+100% { transform: rotate(360deg); }
+}
+.dzsparallaxer:not(.mode-oneelement) { height: 300px; overflow: hidden; background-color: rgb(28, 26, 23); position: relative; transition-property: height; transition-duration: 0.3s; transition-timing-function: ease-in; }
+.dzsparallaxer:not(.mode-oneelement) .dzsparallaxer--target { position: relative; }
+.dzsparallaxer:not(.mode-oneelement) .dzsparallaxer--target.position-absolute { position: absolute; top: 0px; left: 0px; }
+.dzsparallaxer:not(.mode-oneelement) .dzsparallaxer--blackoverlay { position: absolute; opacity: 0; background-color: rgba(0, 0, 0, 0.9); top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; }
+.dzsparallaxer:not(.mode-oneelement) .big-text { position: absolute; text-align: center; width: 80%; left: 10%; font-size: 40px; font-weight: 300; top: 70px; color: rgb(238, 238, 238); line-height: 1.5; font-style: italic; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); opacity: 0.7; }
+.dzsparallaxer:not(.mode-oneelement) .big-text .smaller { font-size: 60%; }
+.dzsparallaxer:not(.mode-oneelement) > .container, .dzsparallaxer:not(.mode-oneelement) > .row, .dzsparallaxer:not(.mode-oneelement) > p, .dzsparallaxer:not(.mode-oneelement) > div { position: relative; }
+.dzsparallaxer:not(.mode-oneelement) .center-it { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.dzsparallaxer:not(.mode-oneelement) .center-it-vertically { position: absolute; top: 50%; transform: translateY(-50%); padding: 10px; }
+.dzsparallaxer:not(.mode-oneelement) [class^="dzsprxseparator--"] { position: absolute; bottom: -1px; left: 0px; width: 100%; }
+.dzsparallaxer:not(.mode-oneelement) [class^="dzsprxseparator--"] .display-block { display: block; }
+.dzsparallaxer:not(.mode-oneelement) .top[class^="dzsprxseparator--"] { bottom: auto; top: 0px; }
+.dzsparallaxer:not(.mode-oneelement) .flippedY[class^="dzsprxseparator--"] { transform: scaleY(-1); }
+.dzsparallaxer:not(.mode-oneelement) .flippedX[class^="dzsprxseparator--"] { transform: scaleX(-1); }
+.dzsparallaxer:not(.mode-oneelement) .flippedXY[class^="dzsprxseparator--"] { transform: scale(-1, -1); }
+.dzsparallaxer.wait-readyall .dzsparallaxer--target { opacity: 0; transition-property: height, opacity; transition-duration: 0.5s; transition-timing-function: ease-in; }
+.dzsparallaxer.mode-oneelement { position: relative; }
+.dzsparallaxer.wait-readyall.dzsprx-readyall .dzsparallaxer--target { opacity: 1; visibility: visible; }
+.dzsparallaxer.use-loading .dzsparallaxer--target { opacity: 0; visibility: hidden; transition-property: opacity, visibility; transition-duration: 0.7s; transition-timing-function: ease-in; }
+.dzsparallaxer.use-loading .preloader-semicircles { transition-property: all; transition-duration: 0.3s; transition-timing-function: ease-in; }
+.dzsparallaxer.simple-parallax.use-loading .dzsparallaxer--target { opacity: 0; visibility: hidden; }
+.dzsparallaxer.height-is-based-on-content { height: auto; padding: 0px !important; }
+.dzsparallaxer.height-is-based-on-content .dzs-container { padding: 45px 0px; }
+.dzsparallaxer.height-is-based-on-content .dzsparallaxer--target { position: absolute; }
+.dzsparallaxer.height-is-based-on-content > div { position: relative; }
+.dzsparallaxer.use-loading.loaded .dzsparallaxer--target { opacity: 1; visibility: visible; }
+.dzsparallaxer.use-loading.loaded .preloader-semicircles { transform: translate3d(0px, -50px, 0px); opacity: 0; visibility: hidden; }
+.dzsparallaxer.allbody { width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: -1; }
+.divimage { background-size: cover; background-position: center center; }
+.dzsparallaxer.is-ie-11 .simple-parallax-inner { clip: auto; }
+.dzsparallaxer.is-ie-11 .simple-parallax-inner .divimage.dzsparallaxer--target { background-attachment: fixed; position: relative; }
+.dzsparallaxer.simple-parallax { overflow: hidden; backface-visibility: hidden; }
+.dzsparallaxer.simple-parallax .simple-parallax-inner { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; clip: rect(0px, auto, auto, 0px); }
+.dzsparallaxer.simple-parallax .dzsparallaxer--target { top: 0px; left: 0px; width: 100%; height: 100%; position: fixed; pointer-events: none; backface-visibility: hidden; }
+.dzsparallaxer.simple-parallax .simple-parallax-inner.is-image { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; clip: auto; }
+.dzsparallaxer.simple-parallax .simple-parallax-inner.is-image > .divimage { position: absolute; background-attachment: fixed; background-repeat: no-repeat; }
+.dzsparallaxer.simple-parallax.simple-parallax--is-only-image .simple-parallax-inner { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; clip: auto; }
+.dzsparallaxer.simple-parallax.simple-parallax--is-only-image .simple-parallax-inner > .divimage { position: absolute; background-attachment: fixed; }
+.dzsparallaxer.simple-parallax.simple-parallax--is-only-image.under-500 .simple-parallax-inner > .divimage { background-attachment: local; }
+.blur-it { filter: blur(20px); }
+.dzsparallaxer div.semi-black-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%) repeat scroll 0% 0%; }
+.radial-bg { position: absolute; }
+.color-white { color: rgb(255, 255, 255); }
+.row-inline { font-size: 0px; }
+.row-inline .col-md-6 { font-size: 15px; display: inline-block; vertical-align: middle; float: none; }
+.dzs-row-inline { font-size: 0px; }
+.dzs-row-inline .dzs-col-md-6 { font-size: 13px; display: inline-block; vertical-align: middle; float: none; }
+@media (max-width: 992px) {
+  .row-inline .col-md-6 { width: 100%; margin-bottom: 15px; padding: 0px 30px 15px; }
+}
+.separator-black-grey polygon, .separator-black-grey polyline, .separator-black-grey path { fill: rgb(34, 34, 34); }
+.separator-white-grey polygon, .separator-white-grey polyline, .separator-white-grey path { fill: rgb(221, 221, 221); }
+.dzs-container { padding-right: 15px; padding-left: 15px; max-width: 1170px; margin: 0px auto; }
+.dzs-row { margin-right: -15px; margin-left: -15px; }
+.dzs-col-md-6 { width: 50%; float: left; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+@keyframes preloader-semicircles-tween {
+0% { transform: rotate(0deg); }
+50% { transform: rotate(180deg); }
+100% { transform: rotate(360deg); }
+}
+@keyframes preloader-semicircles-tween {
+0% { transform: rotate(0deg); }
+50% { transform: rotate(180deg); }
+100% { transform: rotate(360deg); }
+}
+.preloader-semicircles { width: 15px; height: 15px; background: rgba(230, 50, 50, 0.9) none repeat scroll 0% 0%; border-radius: 50px; position: absolute; top: 50%; left: 50%; opacity: 0.7; visibility: visible; pointer-events: none; margin-left: -15px; margin-right: -15px; animation: 1.4s linear 0s normal none infinite running preloader-semicircles-tween; }
+body .dzsparallaxer .preloader-semicircles { position: absolute; }
+.preloader-semicircles::after { position: absolute; width: 25px; height: 25px; border-width: 5px; border-style: solid; border-color: rgb(200, 50, 50) transparent; border-radius: 25px; content: ""; top: -10px; left: -10px; box-sizing: content-box; }
+.center-it { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.dzs-colcontainer { margin-left: -15px; margin-right: -15px; box-sizing: border-box; }
+.dzs-colcontainer-w { width: 1230px; padding: 0px 30px; max-width: 100%; min-height: 1px; }
+.dzs-colcontainer.row-inline { font-size: 0px; }
+.dzs-colcontainer.row-inline [class*="dzs-col-"] { float: none; display: inline-block; font-size: 13px; vertical-align: middle; }
+.dzs-colcontainer::after { display: block; content: ""; clear: both; }
+[class*="dzs-col-"] { float: left; padding-left: 15px; padding-right: 15px; }
+.dzs-col-3 { width: 25%; padding-left: 15px; padding-right: 15px; }
+.dzs-col-4 { width: 33.3%; padding-left: 15px; padding-right: 15px; }
+.dzs-col-8 { width: 66.6%; padding-left: 15px; padding-right: 15px; }
+.dzs-col-6 { width: 50%; padding-left: 15px; padding-right: 15px; }
+.dzs-col-12 { width: 100%; padding-left: 15px; padding-right: 15px; }
+.dzsparallaxer--team-members-con { width: 70%; max-width: 1100px; margin: 0px auto; }
+.dzsparallaxer.under-760 .dzsparallaxer--team-members-con { width: 100%; }
+.dzsparallaxer--team-member-con { text-align: center; }
+.dzsparallaxer--team-member-con img { max-width: 100%; }
+.dzsparallaxer--team-member-con .team-member--title { color: rgb(255, 255, 255); text-transform: uppercase; margin-top: 15px; line-height: 1; font-size: 15px; }
+.dzsparallaxer--team-member-con .team-member--subtitle { opacity: 0.5; margin-top: 10px; line-height: 1.5; background-color: rgb(255, 255, 255); color: rgb(17, 17, 17); padding: 5px; }
+.center-it { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.black-leg-bar { height: 2px; left: -20px; background-color: rgb(34, 34, 34); width: 40px; }
+.white-leg-bar { height: 2px; left: -20px; background-color: rgb(255, 255, 255); width: 40px; }
+.light-grey-box, .lighter-grey-box, .dark-grey-box, .darker-grey-box, .white-white-box { background-color: rgb(204, 204, 204); color: rgb(34, 34, 34); padding: 20px; font-size: 17px; line-height: 1.8; }
+.dark-grey-box { background-color: rgb(68, 68, 68); color: rgb(255, 255, 255); }
+.darker-grey-box { background-color: rgb(51, 51, 51); color: rgb(255, 255, 255); }
+.lighter-grey-box { background-color: rgb(221, 221, 221); }
+.offset-left-10px { margin-left: -10px; }
+.offset-right-10px { margin-right: -10px; }
+.white-white-box { background-color: rgb(255, 255, 255); }
+.dzsparallaxer.blockquote-box { padding: 25px 30px 20px; font-size: 23px; font-weight: 300; font-style: italic; }
+.dzsparallaxer.blockquote-box p:last-child { margin-bottom: 0px; }
+.dzsparallaxer.blockquote-box::before, .dzsparallaxer.blockquote-box::after { content: ""; background: rgba(0, 0, 0, 0) url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"> <g> <path d="M13.645,8.35c-2.256,2.016-3.384,4.068-3.384,6.156c0,2.088,0.864,3.733,2.592,4.932c-0.048,1.152-0.444,2.124-1.188,2.916 c-0.745,0.792-1.645,1.188-2.7,1.188c-2.64,0-3.96-1.439-3.96-4.319c0-1.968,0.731-4.115,2.196-6.444 c1.464-2.328,3.348-4.14,5.651-5.436L13.645,8.35z M24.085,8.35c-2.257,2.016-3.384,4.068-3.384,6.156 c0,2.088,0.864,3.733,2.592,4.932c-0.049,1.152-0.444,2.124-1.188,2.916c-0.745,0.792-1.646,1.188-2.7,1.188 c-2.641,0-3.96-1.439-3.96-4.319c0-1.968,0.73-4.115,2.195-6.444c1.464-2.328,3.349-4.14,5.652-5.436L24.085,8.35z"/> </g> </svg>") repeat scroll 0% 0%; position: absolute; top: 5px; left: 5px; width: 22px; height: 22px; opacity: 0.5; }
+.dzsparallaxer.blockquote-box::after { content: ""; top: auto; left: auto; right: 5px; bottom: 5px; transform: scaleX(-1); }
