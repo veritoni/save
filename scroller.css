@@ -1,0 +1,109 @@
+/* Code tidied up by ScrapBook */
+.scroller-con { position: relative; width: 100%; height: 200px; opacity: 0; transition-property: opacity, visibility, top; transition-duration: 0.3s; transition-timing-function: ease-out; box-sizing: border-box; }
+.scroller-con * { box-sizing: border-box; }
+.scroller-con .scroller { overflow: hidden; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; }
+.scroller-con .scroller .inner { position: absolute !important; }
+.scroller-con .scroller .real-inner { position: absolute; top: 0px; left: 0px; }
+.scroller-con .scrollbar .scrollbary.animatetoptoo { transition-property: opacity, visibility, top; transition-duration: 0.3s; transition-timing-function: ease-out; }
+.scroller-con.safe { opacity: 1; }
+.scroller-con.type-scrollTop { overflow: hidden; height: auto; }
+.scroller-con.type-scrollTop .scrollbary_bg, .scroller-con.type-scrollTop .scrollbary { position: fixed; }
+.scroller-con.dzsscr-inited { opacity: 1; }
+.inner.inner-for-horizontal { white-space: nowrap; width: auto; }
+.inner.inner-for-horizontal > img { max-width: none; }
+.scroller-con.auto-height { height: auto; }
+.scroller-con.auto-height .scroller { position: relative; height: auto; }
+.scroller-con.auto-height .scroller .inner { position: relative !important; display: inline-block; }
+.scroller-con.auto-height .scroller .real-inner { position: relative; top: 0px; left: 0px; }
+.scroller-con.overflow-visible .scroller { overflow: visible; }
+.scroller-con.overflow-x-visible .scroller { overflow-y: hidden; overflow-x: visible; }
+.scroller-con.easing .inner { transition-property: left, top; transition-duration: 0.3s; transition-timing-function: ease-out; }
+.scroller-con .scrollbar.easing > * { transition-property: left, top; transition-duration: 0.7s; transition-timing-function: ease-out; }
+.scroller-con .scrollbary { position: absolute; cursor: pointer; }
+.scroller-con .scrollbary_bg { position: absolute; cursor: pointer; }
+.scroller-con .scrollbarx { position: absolute; cursor: pointer; }
+.scroller-con .scrollbarx_bg { position: absolute; cursor: pointer; }
+.scroller-con.swipe-enabled { cursor: url("openhand.cur") 4 4, move; }
+.scroller-con.swipe-enabled.closedhand { cursor: url("closedhand.cur") 4 4, move; }
+.scroller-con.skin_default .scrollbarx { width: 60px; height: 7px; left: 0px; bottom: -10px; background: rgb(88, 150, 198) none repeat scroll 0% 0%; border-radius: 2px; }
+.scroller-con.skin_default .scrollbarx_bg { height: 7px; left: 0px; bottom: -10px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; border-radius: 5px; }
+.scroller-con.skin_default .scrollbary { width: 10px; height: 60px; top: 0px; right: -11px; background: rgb(88, 150, 198) none repeat scroll 0% 0%; border-radius: 2px; }
+.scroller-con.skin_default .scrollbary_bg { width: 10px; top: 0px; right: -11px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; border-radius: 5px; }
+.scroller-con.dir-ver .scroller { width: calc(100% - 16px); }
+.scroller-con.skin_apple.dir-ver .scroller { width: 100%; }
+.scroller-con.skin_alternate { margin-bottom: 40px; }
+.scroller-con.skin_alternate .scrollbarx { width: 200px; height: 30px; left: 0px; bottom: -30px; background: yellow none repeat scroll 0% 0%; }
+.scroller-con.skin_alternate .scrollbarx_bg { height: 30px; left: 0px; bottom: -30px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
+.scroller-con.skin_alternate .scrollbary { width: 7px; height: 60px; top: 0px; right: -10px; background: transparent url("scroller1.png") repeat scroll 0% 0%; }
+.scroller-con.skin_alternate .scrollbary_bg { width: 7px; top: 0px; right: -10px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; }
+.scroller-con.skin_blackwhite { margin-top: 30px; }
+.scroller-con.skin_blackwhite .scrollbarx { position: absolute; width: 35px; height: 10px; left: 0px; top: -15px; background: rgba(0, 0, 0, 0) url("s3scrollerx.png") repeat scroll 0% 0%; cursor: pointer; }
+.scroller-con.skin_blackwhite .scrollbarx_bg { position: absolute; height: 1px; left: 0px; top: -10px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; cursor: pointer; }
+.scroller-con.skin_blackwhite .scrollbary { width: 10px; height: 35px; top: 0px; right: -15px; background: rgba(0, 0, 0, 0) url("s3scrollery.png") repeat scroll 0% 0%; }
+.scroller-con.skin_blackwhite .scrollbary_bg { position: absolute; width: 1px; top: 0px; right: -10px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; cursor: pointer; }
+.scroller-con.skin_progress .scrollbarx { width: 60px; height: 19px; left: 0px; bottom: -20px; background-image: url("progress.png"); border-radius: 15px; }
+.scroller-con.skin_progress .scrollbarx_bg { height: 19px; left: 0px; bottom: -20px; background: rgb(25, 29, 33) none repeat scroll 0% 0%; border-radius: 15px; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_progress .scrollbary { width: 19px; height: 60px; top: 0px; right: -28px; background-image: url("progressy.png"); border-radius: 15px; }
+.scroller-con.skin_progress .scrollbary_bg { width: 19px; top: 0px; right: -28px; background: rgb(25, 29, 33) none repeat scroll 0% 0%; border-radius: 15px; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_progressbox .scrollbarx { width: 60px; height: 19px; left: 0px; bottom: -16px; background-image: url("progressblue.png"); }
+.scroller-con.skin_progressbox .scrollbarx_bg { height: 19px; left: 0px; bottom: -16px; background: rgb(25, 29, 33) none repeat scroll 0% 0%; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_progressbox .scrollbary { width: 19px; height: 60px; top: 0px; right: -28px; background-image: url("progressy.png"); border-radius: 15px; }
+.scroller-con.skin_progressbox .scrollbary_bg { width: 19px; top: 0px; right: -28px; background: rgb(25, 29, 33) none repeat scroll 0% 0%; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_slider .scrollbarx { width: 60px; height: 7px; left: 0px; bottom: -10px; background: rgb(88, 150, 198) none repeat scroll 0% 0%; border-radius: 2px; }
+.scroller-con.skin_slider .scrollbarx_bg { height: 7px; left: 0px; bottom: -10px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; border-radius: 5px; }
+.scroller-con.skin_slider .scrollbary { width: 30px; height: 30px; top: 0px; right: -30px; background-image: url("handle.png"); background-repeat: no-repeat; background-position: center center; }
+.scroller-con.skin_slider .scrollbary_bg { width: 7px; top: 0px; right: -18px; background: rgb(40, 42, 49) none repeat scroll 0% 0%; border-radius: 15px; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_slider.scrollbars-inset .scrollbary { right: 0px; }
+.scroller-con.skin_slider.scrollbars-inset .scrollbary_bg { right: 0px; }
+.scroller-con.skin_slider.scrollbars-inset .scrollbarx { bottom: 0px; }
+.scroller-con.skin_slider.scrollbars-inset .scrollbarx_bg { bottom: 10px; }
+.scroller-con.skin_slider .scrollbarx { width: 30px; height: 30px; left: 0px; bottom: -31px; background-color: transparent; background-image: url("handle.png"); background-repeat: no-repeat; background-position: center center; }
+.scroller-con.skin_slider .scrollbarx_bg { height: 7px; left: 0px; bottom: -20px; background: rgb(40, 42, 49) none repeat scroll 0% 0%; border-radius: 15px; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_slider .scrollbary { width: 30px; height: 30px; top: 0px; right: -30px; background-image: url("handle.png"); background-repeat: no-repeat; background-position: center center; }
+.scroller-con.skin_slider .scrollbary_bg { width: 7px; top: 0px; right: -18px; background: rgb(40, 42, 49) none repeat scroll 0% 0%; border-radius: 15px; border: 1px solid rgb(26, 26, 26); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_timeline .scrollbar { opacity: 0; }
+.scroller-con.skin_timeline .scrollbarx { width: 17px; height: 17px; left: 0px; bottom: 7px; background-color: transparent; background-image: url("skin_timeline_handle.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
+.scroller-con.skin_timeline .scrollbarx_bg { height: 30px; left: 0px; bottom: 0px; background-image: url("skin_timeline_bg.png"); background-position: center center; background-repeat: repeat-x; box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_timeline .scrollbary { width: 30px; height: 30px; top: 0px; right: -30px; background-image: url("handle.png"); background-repeat: no-repeat; background-position: center center; }
+.scroller-con.skin_timeline .scrollbary_bg { width: 7px; top: 0px; right: -18px; background: rgb(40, 42, 49) none repeat scroll 0% 0%; border-radius: 15px; box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); box-sizing: border-box; }
+.scroller-con.skin_royale { margin-bottom: 30px; }
+.scroller-con.skin_royale .scrollbarx_bg, .scroller-con.skin_royale .scrollbary_bg { background-color: rgb(28, 26, 23); border-radius: 3px; }
+.scroller-con.skin_royale .scrollbarx, .scroller-con.skin_royale .scrollbary { background-color: rgb(54, 51, 48); border-radius: 3px; }
+.scroller-con.skin_royale .scrollbarx_bg { height: 14px; top: auto; bottom: -24px; }
+.scroller-con.skin_royale .scrollbarx { width: 50px; height: 14px; top: auto; bottom: -24px; }
+.scroller-con.skin_royale .scrollbary_bg { width: 14px; left: auto; right: -24px; }
+.scroller-con.skin_royale .scrollbary { width: 14px; left: auto; right: -24px; height: 50px; }
+.scroller-con.skin_apple .scrollbarx { width: 90px; height: 8px; left: 0px; bottom: -15px; background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%; border-radius: 10px; }
+.scroller-con.skin_apple .scrollbarx_bg { height: 0px; }
+.scroller-con.skin_apple .scrollbary { width: 8px; height: 90px; top: 0px; right: 0px; background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%; border-radius: 10px; }
+.scroller-con.skin_apple .scrollbary_bg { width: 8px; right: 0px; background: rgba(255, 255, 255, 0) none repeat scroll 0% 0%; transition-property: all; transition-duration: 0.3s; transition-timing-function: ease-out; }
+.scroller-con.skin_apple .scrollbar:hover .scrollbary_bg, .scroller-con.skin_apple .scrollbar.dragging .scrollbary_bg { background: rgba(255, 255, 255, 0.3) none repeat scroll 0% 0%; }
+.scroller-con.skin_bigblue { margin-bottom: 30px; }
+.scroller-con.skin_bigblue .scrollbary { width: 20px; background: rgb(89, 200, 239) none repeat scroll 0% 0%; opacity: 0.2; border-radius: 0px; height: 350px; }
+.scroller-con.skin_bigblue .scrollbary_bg { opacity: 0; border-radius: 0px; }
+.scroller-con.skin_bigblue .scrollbarx { width: 350px; background: rgb(89, 200, 239) none repeat scroll 0% 0%; opacity: 0.2; border-radius: 0px; height: 20px; top: 100%; bottom: auto; margin-top: 5px; }
+.scroller-con.skin_bigblue .scrollbax_bg { opacity: 0; border-radius: 0px; top: 100%; bottom: auto; margin-top: 5px; }
+.scroller-con.skin_luna { margin-bottom: 30px; }
+.scroller-con.skin_luna .scrollbary { width: 20px; background: rgb(89, 200, 239) none repeat scroll 0% 0%; opacity: 0.2; border-radius: 0px; height: 350px; }
+.scroller-con.skin_luna .scrollbary_bg { opacity: 0; border-radius: 0px; }
+.scroller-con.skin_luna .scrollbarx { width: 100px; background: rgb(250, 250, 250) none repeat scroll 0% 0%; opacity: 1; border-radius: 0px; height: 16px; top: 100%; bottom: auto; margin-top: 7px; margin-left: 2px; }
+.scroller-con.skin_luna .scrollbarx svg.arrow-left, .scroller-con.skin_luna .scrollbarx svg.arrow-right { width: 5px; height: 7px; position: absolute; top: 5px; left: 6px; }
+.scroller-con.skin_luna .scrollbarx svg.arrow-left path, .scroller-con.skin_luna .scrollbarx svg.arrow-right path { fill: rgb(85, 85, 85); }
+.scroller-con.skin_luna .scrollbarx svg.arrow-right { right: 6px; left: auto; transform: scaleX(-1); }
+.scroller-con.skin_luna .scrollbarx_bg { opacity: 1; border-radius: 0px; background-color: rgba(50, 50, 50, 0.1); height: 20px; top: 100%; bottom: auto; margin-top: 5px; }
+.scroller-con.skin_cerc { margin-bottom: 30px; }
+.scroller-con.skin_cerc .scrollbary { width: 20px; background: rgb(89, 200, 239) none repeat scroll 0% 0%; opacity: 0.2; border-radius: 0px; height: 350px; }
+.scroller-con.skin_cerc .scrollbary_bg { opacity: 0; border-radius: 0px; }
+.scroller-con.skin_cerc .scrollbarx { width: 22px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; opacity: 1; border-radius: 50%; height: 22px; top: 100%; bottom: auto; margin-top: 7px; margin-left: 2px; }
+.scroller-con.skin_cerc .scrollbarx svg.arrow-left, .scroller-con.skin_cerc .scrollbarx svg.arrow-right { width: 3px; height: 7px; position: absolute; top: 8px; left: 5px; }
+.scroller-con.skin_cerc .scrollbarx svg.arrow-left path, .scroller-con.skin_cerc .scrollbarx svg.arrow-right path { fill: rgb(229, 193, 0); }
+.scroller-con.skin_cerc .scrollbarx svg.arrow-right { right: 5px; left: auto; transform: scaleX(-1); }
+.scroller-con.skin_cerc .scrollbarx_bg { opacity: 1; border-radius: 0px; background-color: rgba(50, 50, 50, 0.1); height: 1px; top: 100%; bottom: auto; margin-top: 18px; }
+.scroller-con.place-scrollbar-left .scrollbary, .scroller-con.place-scrollbar-left .scrollbary_bg { left: auto; right: 100%; }
+body.scroller-con { overflow: hidden !important; margin-top: 0px !important; }
+body.scroller-con .inner { width: 100%; }
+body.scroller-con.skin_blackwhite .scrollbary { right: 0px; }
+body.scroller-con.skin_blackwhite .scrollbary_bg { right: 5px; }
+.preloader { width: 50px; height: 50px; position: absolute; top: 50%; left: 50%; border-radius: 10px; background: rgb(255, 255, 255) url("preloader.gif") no-repeat scroll center center; }
+.fullwidth { width: 100%; }
+.fullheight { height: 100%; }
