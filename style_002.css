@@ -1,0 +1,5 @@
+/* Code tidied up by ScrapBook */
+.advantages-item { display: flex; flex-wrap: nowrap; align-items: center; }
+.advantages-item__icon-wrapper { display: block; max-width: 48px; max-height: 48px; margin-right: 10px; }
+.advantages-item__icon svg, .advantages-item__icon path { fill: rgb(255, 255, 255) !important; }
+.advantages-item__icon svg { max-width: 48px; max-height: 48px; }

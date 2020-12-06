@@ -1,0 +1,13 @@
+/* Code tidied up by ScrapBook */
+.slam-easyform .modal { text-align: center; }
+@media screen and (min-width: 768px) {
+  .slam-easyform .modal::before { display: inline-block; vertical-align: middle; content: " "; height: 100%; }
+}
+.slam-easyform .modal-dialog { display: inline-block; text-align: left; vertical-align: middle; }
+.slam-easyform .modal .modal-header .title { margin: 0px; font-size: 22px; display: inline-block; }
+.hide-formvalidation small.help-block { display: none !important; }
+@keyframes spinner {
+100% { transform: rotate(360deg); }
+}
+.slam-easyform .spinner, .slam-easyform .spinner:hover { position: relative; color: transparent; }
+.slam-easyform .spinner::before { content: ""; box-sizing: border-box; position: absolute; top: 50%; left: 50%; width: 20px; height: 20px; margin-top: -10px; margin-left: -10px; border-radius: 50%; border-width: 2px; border-style: solid; border-color: rgb(51, 51, 51) rgb(204, 204, 204) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; animation: 0.6s linear 0s normal none infinite running spinner; }
